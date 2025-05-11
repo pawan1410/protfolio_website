@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0c242;
+  }
+  .resume {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .resume a img {
+    width: 24px;
+    margin-left: 10px;
+    filter: invert(100%);
+    transition: transform 0.3s;
+  }
+  
+  .resume a img:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .icons a img {
+    width: 24px;
+    margin-left: 10px;
+    filter: invert(100%);
+    transition: transform 0.3s;
+  }
+  
+  .icons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .intro {
+    flex: 1 1 60%;
+  }
+  
+  .intro h1 {
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .intro p {
+    border-left: 3px solid #f0c242;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .projects {
+    flex: 1 1 35%;
+  }
+  
+  .projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .projects ul {
+    list-style: none;
+  }
+  
+  .projects ul li {
+    margin-bottom: 10px;
+  }
+  
+  .projects ul li a {
+    text-decoration: none;
+    color: #f0c242;
+    border-bottom: 1px solid #f0c242;
+    transition: all 0.3s ease;
+  }
+  
+  .projects ul li a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  
