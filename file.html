@@ -2,58 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Pawan Baisla</title>
-  <link rel="stylesheet" href="file.css">
+  <link rel="stylesheet" href="file.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
 </head>
 
 <body>
+  
+
+
+
+  <script>
+    const text = "Welcome.";
+    let index = 0;
+    const h1 = document.querySelector(".intro h1");
+    h1.textContent = "";
+
+    function type() {
+      if (index < text.length) {
+        h1.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 150); // typing speed
+      }
+    }
+
+    type();
+  </script>
+
   <div class="container">
     <header>
-      <div class="logo">PB</div>
+      <div class="logo">PAWAN BAISLA</div>
       <div class="icons">
-        <a href="mailto:baisla1410@.com" target="_blank"><img src="istockphoto-1125279178-612x612.jpg" alt="Mail"></a>
-        <a href="https://github.com/pawan1410/gitone" target="_blank"><img src="GitHub-Mark-ea2971cee799.png"
-            alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/pawan-baisla-33188b235/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BumIkGmQgTa2oqARt75uT%2FA%3D%3D"
-          target="_blank"><img src="social-media-logo-design_23-2151299455.jpg.avif" alt="LinkedIn"></a>
-
+        <a href="mailto:baisla1410@gmail.com" target="_blank">
+          <img src="istockphoto-1125279178-612x612.jpg" alt="Mail Icon" />
+        </a>
+        <a href="https://github.com/pawan1410" target="_blank">
+          <img src="GitHub-Mark-ea2971cee799.png" alt="GitHub Icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/pawan-baisla-33188b235/" target="_blank">
+          <img src="social-media-logo-design_23-2151299455.jpg.avif" alt="LinkedIn Icon" />
+        </a>
       </div>
+    </header>
 
+    <main>
+      <section class="intro">
+        <h1>Welcome.</h1>
+        <p>
+          My name is Pawan Baisla. I'm a front-end developer based in Noida, India.<br />
+          I specialize in creating modern, responsive UIs and have experience building applications across platforms —
+          from web to ecommerce dashboards.<br /><br />
+          I'm passionate about pixel-perfect design, elegant code, and user-friendly UX.
+        </p>
+      </section>
 
+      <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">AI Chatbot</a></li>
+          <li><a href="#">Air Quality Dashboard</a></li>
+          <li><a href="#">Portfolio Website</a></li>
+          <li><a href="#">To-do App</a></li>
+          <li><a href="#">Real-time Twitter Insights</a></li>
+        </ul>
+      </section>
+    </main>
 
+    <footer>
+      <p>&copy; 2025 pawanbaisla.dev</p>
+    </footer>
+    <footer>
+    </footer>
   </div>
+  <script>
+    const projectLinks = document.querySelectorAll(".projects a");
 
-  </header>
+    projectLinks.forEach(link => {
+      link.addEventListener("mouseover", () => {
+        link.style.color = "orange";
+        link.style.fontWeight = "bold";
+      });
 
-  <main>
-    <section class="intro">
-      <h1>Welcome.</h1>
-      <p>
-        My name is Pawan Baisla. I'm a front-end developer based in Noida, India.<br>
-        I specialize in creating modern, responsive UIs and have experience building applications across
-        platforms—from web to ecommerce dashboards.<br><br>
-        I'm passionate about pixel-perfect design, elegant code, and user-friendly UX.
-      </p>
-    </section>
+      link.addEventListener("mouseout", () => {
+        link.style.color = "";
+        link.style.fontWeight = "";
+      });
+    });
+  </script>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="#">AI Chatbot</a></li>
-        <li><a href="#">Air Quality Dashboard</a></li>
-        <li><a href="#">Portfolio Website</a></li>
-        <li><a href="#">To-do App</a></li>
-        <li><a href="#">Real-time Twitter Insights</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 pawanbaisla.dev</p>
-  </footer>
-  </div>
 </body>
 
 </html>
